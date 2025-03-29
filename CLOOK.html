@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1.0">
+    <title>Disk Scheduling Algorithm</title>
+    <style>
+        @font-face {
+            font-family: 'SloopScriptPro';
+            src: url('Sloop-ScriptThree.ttf') format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Perandory';
+            src: url('Perandory-Regular.otf') format('opentype');
+        }
+
+        html, body {
+            text-align: center;
+            background-image: url('gif1.gif'); /* Background GIF */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1920px;
+            height: 1080px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .title-container {
+            position: fixed;
+            top: 50px;
+            text-align: center;
+        }
+
+        .title {
+            font-family: 'SloopScriptPro', serif;
+            font-size: 100px; /* Increased font size */
+            font-weight: bold;
+            color: #f7aac8;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 5px; /* Adjust spacing */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center everything */
+            justify-content: center;
+            width: 80%;
+            margin-top: 200px;
+            position: fixed;
+            top: 200px;
+        }
+
+        .text {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            color: black;
+            margin: 0 auto;
+            max-width: 80%;
+            position: fixed;
+            top: 250px;
+        }
+
+        .image {
+            margin-top: 50px; /* Increased space above image */
+            margin-bottom: 100px; /* Increased space below image */
+            position: fixed;
+            top: 450px;
+        }
+
+        .image img {
+            max-width: 60%; /* Increased image size */
+            height: auto;
+            border-radius: 10px; /* Optional styling */
+            border: 5px solid #f7aac8; /* Pink outline */
+        }
+
+        .back-link {
+            font-size: 20px; /* Adjusted size to 20px */
+            font-family: 'Perandory', sans-serif;
+            font-weight: bold;
+            text-decoration: underline;
+            color: #f7aac8;
+            position: fixed; /* Fixed positioning to prevent scrolling */
+            bottom: 10px; /* Moved further down */
+        }
+
+        .back-link a {
+            color: #f7aac8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">Circular Look</h1>
+    </div>
+    <div class="container">
+        <div class="text">
+            <p>
+                CLOOK is similar to CSCAN disk scheduling algorithm. In CLOOK, the disk arm in spite of going to the end goes only to the 
+            </p>
+            <p>
+                last request to be serviced in front of the head and then from there goes to the other end’s last request. 
+            </p>
+            <p>
+                Thus, it also prevents the extra delay which occurred due to unnecessary traversal to the end of the disk. 
+                </p>
+                <p>
+                    Suppose a disk having 200 tracks (0-199). the order of request is in - (82,170,43,140,24,16,190)
+                </p>
+            <P>
+                The current position of Read/Write head is : 50, and it is also given that the disk arm should move “towards the larger value”
+            </P>
+        </div>
+        <div class="image">
+            <img src="6.jpg" alt="Disk Image">
+        </div>
+    </div>
+    <div class="back-link">
+        <a href="DISK SCHEDULING.html">BACK TO DISK SCHEDULING ALGORITHM</a>
+    </div>
+</body>
+</html>

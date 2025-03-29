@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1.0">
+    <title>Disk Scheduling Algorithm</title>
+    <style>
+        @font-face {
+            font-family: 'SloopScriptPro';
+            src: url('Sloop-ScriptThree.ttf') format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Perandory';
+            src: url('Perandory-Regular.otf') format('opentype');
+        }
+
+        html, body {
+            text-align: center;
+            background-image: url('gif1.gif'); /* Background GIF */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1920px;
+            height: 1080px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .title-container {
+            position: fixed;
+            top: 30px;
+            text-align: center;
+        }
+
+        .title {
+            font-family: 'SloopScriptPro', serif;
+            font-size: 100px; /* Increased font size */
+            font-weight: bold;
+            color: #f7aac8;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 5px; /* Adjust spacing */
+        }
+
+        .subtitle {
+            font-family: 'Perandory', sans-serif;
+            font-size: 45px;
+            color: #f7aac8;
+            margin-top: 0; /* Reduce space above subtitle */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center everything */
+            justify-content: center;
+            width: 80%;
+            margin-top: 200px;
+            position: fixed;
+            top: 200px;
+        }
+
+        .text {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            color: black;
+            margin: 0 auto;
+            max-width: 80%;
+            position: fixed;
+            top: 250px;
+        }
+
+        .image {
+            margin-top: 20px; /* Adjust space above image */
+            margin-bottom: 100px; /* Increased space below image */
+            position: fixed;
+            top: 400px;
+        }
+
+        .image img {
+            max-width: 60%; /* Increased image size */
+            height: auto;
+            border-radius: 10px; /* Optional styling */
+            border: 5px solid #f7aac8; /* Added outline */
+        }
+
+        .back-link {
+            font-size: 20px; /* Adjusted size to 20px */
+            font-family: 'Perandory', sans-serif;
+            font-weight: bold;
+            text-decoration: underline;
+            color: #f7aac8;
+            position: fixed; /* Fixed positioning to prevent scrolling */
+            bottom: 10px; /* Moved further down */
+        }
+
+        .back-link a {
+            color: #f7aac8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">First Come First Serve</h1>
+        <h2 class="subtitle">(FCFS)</h2>
+    </div>
+    <div class="container">
+        <div class="text">
+            <p>
+                First Come First Serve (FCFS) is the simplest of all Disk Scheduling Algorithms. 
+            </p>
+            <p>
+                In FCFS, the requests are addressed in the order they arrive in the disk queue. 
+            </p>
+            <p> 
+                Suppose a disk has 200 tracks (0-199). The order of requests is: (82, 170, 43, 140, 24, 16, 190). 
+            </p>
+            <P>
+                The current position of the Read/Write head is 50.
+            </P>
+        </div>
+        <div class="image">
+            <img src="1.jpg" alt="Disk Image">
+        </div>
+    </div>
+    <div class="back-link">
+        <a href="DISK SCHEDULING.html">BACK TO DISK SCHEDULING ALGORITHM</a>
+    </div>
+</body>
+</html>

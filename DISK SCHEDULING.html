@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disk Scheduling Algorithm</title>
+    <style>
+        @font-face {
+            font-family: 'SloopScriptPro';
+            src: url('Sloop-ScriptThree.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Perandory';
+            src: url('Perandory-Regular.otf') format('truetype');
+        }
+
+        html, body {
+            font-family: 'SloopScriptPro', serif;
+            text-align: center;
+            background-image: url('gif2.gif'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .ribbon {
+            width: 50px;
+            height: auto;
+            margin-right: 10px; 
+            z-index: 3;
+        }
+
+        .title {
+            font-family: 'SloopScriptPro', serif;
+            font-size: 120px;
+            color: #f7aac8;
+            text-shadow: 3px 3px 5px black;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 5px; 
+            margin-top: 20px;
+            z-index: 2;
+            flex-wrap: wrap; 
+        }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background: white;
+            border: 2px solid #f7aac8;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            position: relative;
+            width: 220px; 
+            height: 50px; 
+            justify-content: center; 
+        }
+
+        .button-container:hover {
+            background: #f0f0f0;
+        }
+
+        .button-text {
+            font-size: 18px;
+            font-family: 'Perandory', sans-serif !important;
+            color: #f7aac8;
+            text-transform: uppercase;
+            z-index: 4;
+            transition: color 0.3s; 
+        }
+
+        
+        .button-container:hover .button-text {
+            color: #f7aac8; 
+        }
+
+        
+        .back-home {
+            font-family: 'Perandory', sans-serif;
+            font-size: 20px; 
+            color: #f7aac8; 
+            text-decoration: underline; 
+            text-transform: uppercase;
+            margin-top: 30px;
+            cursor: pointer;
+            transition: none; 
+            display: inline-block; 
+            position: absolute;
+            bottom: 20px; 
+        }
+
+        .back-home:hover {
+            color: #f7aac8; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title">Disk Scheduling Algorithm</div>
+    
+    <div class="container">
+        <!-- Button Row -->
+        <div class="button-container" onclick="window.location.href='FCFS.html'">
+            <img src="button.png" alt="Ribbon" class="ribbon">
+            <span class="button-text">First Come First Served</span>
+        </div>
+        <div class="button-container" onclick="window.location.href='SSTF.html'">
+            <img src="button.png" alt="Ribbon" class="ribbon">
+            <span class="button-text">Shortest Seek Time First</span>
+        </div>
+        <div class="button-container" onclick="window.location.href='SCAN.html'">
+            <img src="button.png" alt="Ribbon" class="ribbon">
+            <span class="button-text">Scan</span>
+        </div>
+        <div class="button-container" onclick="window.location.href='CSCAN.html'">
+            <img src="button.png" alt="Ribbon" class="ribbon">
+            <span class="button-text">CScan</span>
+        </div>
+        <div class="button-container" onclick="window.location.href='LOOK.html'">
+            <img src="button.png" alt="Ribbon" class="ribbon">
+            <span class="button-text">Look</span>
+        </div>
+        <div class="button-container" onclick="window.location.href='CLOOK.html'">
+            <img src="button.png" alt="Ribbon" class="ribbon">
+            <span class="button-text">Circular Look</span>
+        </div>
+    </div>
+
+    
+    <a href="index.html" class="back-home">Back to Homepage</a>
+</body>
+</html>
